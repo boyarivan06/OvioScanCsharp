@@ -20,10 +20,11 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
-        <RadioButton x:Name="file_radio" Content="Файл" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="32,0,0,0" GroupName="file_dir"/>
+        <RadioButton x:Name="file_radio" IsChecked="True" Content="Файл" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="32,0,0,0" GroupName="file_dir"/>
         <RadioButton x:Name="dir_radio" Content="Папка" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="32,0,0,0" GroupName="file_dir"/>
-        <TextBox x:Name="path_box" HorizontalAlignment="Center"  Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="160" Grid.Column="1" Height="20"/>
+        <TextBox x:Name="path_box" HorizontalAlignment="Center"  Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="220" Grid.Column="1" Height="52"/>
         <Button x:Name="runButton" Click="runButton_Click" Grid.Column="1" Content="Считать" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="26" Width="123"/>
-
+        <TextBox x:Name="output_Box" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="357" Height="124" Grid.RowSpan="2"/>
+        <TextBox x:Name="warningBox" IsEnabled="False" Foreground="Red" Grid.Row="1" Grid.Column="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Width="357" Margin="10,0,0,0"/>
     </Grid>
 </Window>
